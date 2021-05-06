@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Atividade12</title>
+
+        <link rel="stylesheet" href="atividade12.css">
+	</head>
+	<body>
+        <div class="center" style="padding: 50px">
+            <h1>Formulário</h1>
+            <hr style="margin: 60px 10%;">
+
+            <form action="teste" method="POST" name="form" id="form" onsubmit="return validateForm();">
+                <div class="center">
+                    <label for="nome">Nome Completo:</label>
+                    <br>
+                    <input name="nome" type="text" id="nome" minlength="10">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input name="email" type="email" id="email">
+                    <br><br>
+                    <label for="nome">Comentários:</label>
+                    <br>
+                    <textarea name="comentario" id="comentario" minlength="20"></textarea>
+                </div>
+                <footer class="center">
+                    <div class="survey" style="margin: 50px 0px;">
+                        Primeira vez aqui?
+                        <input type="radio" id="upper" name="type" onclick="survey(true)" />
+                        <label for="upper">Sim</label>
+                        <input type="radio" id="lower" name="type" onclick="survey(false)" />
+                        <label for="lower">Não</label>
+                    </div>
+
+                    <input name="submit" type="submit" form="form" value="Enviar">
+                    <input name="reset" type="reset" form="form" value="Limpar">
+                </footer>
+            </form>
+        </div>
+
+		<script src="atividade12.js"></script>
+	</body>
+</html>
